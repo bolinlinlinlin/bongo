@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <title>BongoCat</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    
+</head>
+
+<body onload="loadSound();">
+    
+    <!-- 容器 -->
+    <div id="container">
+        <hr id="desk">
+        <!-- instrument容器 -->
+        <div id="instrument" class="bongo"></div>
+        <!-- cat容器 -->
+        <div id="cat">
+            <!-- head -->
+            <div id="head"></div>
+            <!-- mouth -->
+            <div id="mouth" class="on"></div>
+            <!-- paw-left -->
+            <div id="paw-left" class="up"></div>
+            <!-- paw-right -->
+            <div id="paw-right" class="up"></div>
+        </div>
+
+    </div>
+
+    <script src="soundmanager2.js"></script>
+    <script src="soundmanager2-jsmin.js"></script>
+    <script src="soundmanager2-nodebug-jsmin.js"></script>
+    <script src="soundmanager2-nodebug.js"></script>
+    <script src='./createjs.min.js'></script>
+    <script src="main.js"></script>
+    <script>
+        var mySound = soundManager.createSound({
+        url: '/sounds/meow.mp3'
+        });
+
+    </script>
+    
+</body>
+
+</html>
